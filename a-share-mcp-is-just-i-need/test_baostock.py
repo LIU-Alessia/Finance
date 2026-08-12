@@ -32,10 +32,10 @@ class CompleteBaostockDataSourceTester:
         """初始化测试器"""
         self.data_source = BaostockDataSource()
         self.test_stock_code = "sh.603871"  # 嘉友国际物流股份有限公司
-        self.test_year = "2023"
+        self.test_year = "2025"
         self.test_quarter = 4
-        self.test_start_date = "2023-01-01"
-        self.test_end_date = "2023-12-31"
+        self.test_start_date = "2025-01-01"
+        self.test_end_date = "2025-12-31"
         self.test_count = 0
         self.success_count = 0
         self.fail_count = 0
