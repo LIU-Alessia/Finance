@@ -8,7 +8,7 @@ SERVER_CONFIGS = {
         "args": [
             "run",  
             "--directory",
-            r"D:/Data/projects/Finance/a-share-mcp-is-just-i-need",  # 修改为a-share-mcp-is-just-i-need服务器项目路径
+            r"/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need",  # 修改为a-share-mcp-is-just-i-need服务器项目路径
             "python",  #
             "mcp_server.py"  # MCP服务器脚本
         ],
