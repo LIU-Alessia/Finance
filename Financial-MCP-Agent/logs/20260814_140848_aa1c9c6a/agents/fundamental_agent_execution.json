@@ -1,0 +1,32 @@
+{
+  "agent_name": "fundamental_agent",
+  "start_time": "2026-08-14T14:08:48.137712",
+  "start_timestamp": 1786687728.137717,
+  "input_data": {
+    "user_query": "帮我看看腾讯股票值得投资吗",
+    "stock_code": null,
+    "company_name": "腾讯",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2026-08-14T14:09:38.943181",
+  "end_timestamp": 1786687778.943198,
+  "execution_time_seconds": 50.80509376525879,
+  "output_data": {
+    "fundamental_analysis_length": 756,
+    "analysis_preview": "---\n\n## 重要说明：腾讯控股不在A股市场，无法通过本工具获取数据\n\n经过多次尝试，我需要向您明确说明以下情况：\n\n### 🔴 核心问题\n\n**腾讯控股有限公司（Tencent Holdings Limited）** 是在**香港联合交易所**上市的公司，股票代码为 **00700.HK**。它**不是中国A股上市公司**，不在上海证券交易所或深圳证券交易所交易。\n\n### 🔴 工具限制\n\n我可用的所有数据工具（基于Baostock API）**仅支持中国A股市场**的股票数据查询，包括：\n- 上海证券交易所（sh.xxxxxx）\n- 深圳证券交易所（sz.xxxxxx）\n\n**无法获取港股、美股或其他境外上市股票的数据。**\n\n### 📋 我能提供的替代方案\n\n如果您希望进行基本面分析，我可以帮助您分析以下**A股上市的互联网/科技相关公司**，例如：\n\n| 股票代码 | 公司名称 | 所属行业 |\n|---------|---------|---------|\n| sz.002230 | 科大讯飞 | 人工智能/软件 |\n| sh.603444 | 吉比特 | 游戏/互联网 |",
+    "llm_execution_time": 49.98597455024719,
+    "total_execution_time": 50.80509376525879
+  },
+  "success": true,
+  "error": null
+}

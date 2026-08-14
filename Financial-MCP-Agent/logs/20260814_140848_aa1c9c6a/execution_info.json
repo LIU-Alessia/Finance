@@ -1,0 +1,64 @@
+{
+  "execution_id": "20260814_140848_aa1c9c6a",
+  "start_time": "2026-08-14T14:08:48.109109",
+  "start_timestamp": 1786687728.1091082,
+  "environment": {
+    "python_version": "3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:38:16) [GCC 14.3.0]",
+    "working_directory": "/root/autodl-tmp/Finance/Financial-MCP-Agent",
+    "environment_variables": {
+      "OPENAI_COMPATIBLE_MODEL": "qwen3.7-plus",
+      "OPENAI_COMPATIBLE_BASE_URL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "OPENAI_COMPATIBLE_API_KEY": "***"
+    }
+  },
+  "end_time": "2026-08-14T14:11:29.358324",
+  "end_timestamp": 1786687889.358132,
+  "total_execution_time_seconds": 161.24902367591858,
+  "success": true,
+  "error": null,
+  "status": "completed",
+  "summary": {
+    "agents_executed": [
+      {
+        "name": "value_agent",
+        "success": true,
+        "execution_time": 27.818665504455566
+      },
+      {
+        "name": "technical_agent",
+        "success": true,
+        "execution_time": 23.137027502059937
+      },
+      {
+        "name": "main",
+        "success": false,
+        "execution_time": 0
+      },
+      {
+        "name": "fundamental_agent",
+        "success": true,
+        "execution_time": 50.80509376525879
+      },
+      {
+        "name": "summary_agent",
+        "success": true,
+        "execution_time": 77.32118916511536
+      },
+      {
+        "name": "news_agent",
+        "success": true,
+        "execution_time": 83.78576421737671
+      }
+    ],
+    "llm_interactions_count": 5,
+    "tools_used_count": 23,
+    "tool_success_rate": 1.0,
+    "data_consistency_rate": 1.0,
+    "cache_hit_rate": 0.08695652173913043,
+    "tool_latency_seconds": {
+      "average": 2.374415166190137,
+      "p95": 7.020066872239113
+    },
+    "total_files_created": 27
+  }
+}

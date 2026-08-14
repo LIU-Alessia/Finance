@@ -1,0 +1,32 @@
+{
+  "agent_name": "news_agent",
+  "start_time": "2026-08-14T14:08:48.244612",
+  "start_timestamp": 1786687728.244618,
+  "input_data": {
+    "user_query": "帮我看看腾讯股票值得投资吗",
+    "stock_code": null,
+    "company_name": "腾讯",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2026-08-14T14:10:12.030761",
+  "end_timestamp": 1786687812.0307791,
+  "execution_time_seconds": 83.78576421737671,
+  "output_data": {
+    "news_analysis_length": 5171,
+    "analysis_preview": "# 腾讯（00700.HK）新闻分析报告\n\n**分析日期：2026年8月14日**\n\n---\n\n## 一、最新新闻汇总与情感分析\n\n根据爬取的最新新闻，我筛选出以下**10条核心新闻**进行深度分析：\n\n### 📊 新闻情感与风险评估表\n\n| 序号 | 新闻标题 | 情感评分 | 风险评分 | 核心内容摘要 |\n|:---:|:---|:---:|:---:|:---|\n| 1 | **腾讯2026年Q2财报发布：游戏业务双位数增长11%** | ⭐⭐⭐⭐⭐ (5) | ⭐ (1) | Q2营收2048亿元，同比+11%；游戏收入659亿元，本土游戏+17%；《三角洲行动》《无畏契约》日活创新高 |\n| 2 | **腾讯Q2营收同比增长11%超预期，算力采购大幅推高资本开支至527.8亿** | ⭐⭐⭐ (3) | ⭐⭐⭐ (3) | 营收超预期但净利润560亿低于预期584亿；资本开支528亿创历史新高；自由现金流-138亿首次转负 |\n| 3 | **腾讯二季度营收首破2000亿，游戏、广告支撑AI投入** | ⭐⭐⭐⭐ (4) | ⭐⭐ (2) | 单季营收首破2000亿大关；营",
+    "llm_execution_time": 83.06780290603638,
+    "total_execution_time": 83.78576421737671
+  },
+  "success": true,
+  "error": null
+}

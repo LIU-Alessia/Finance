@@ -192,3 +192,13 @@
 2026-08-14 11:42:01 - __main__ - INFO - Starting financial analysis workflow for query: '帮我看看茅台(600519)这只股票值得投资吗'
 2026-08-14 11:46:34 - __main__ - INFO - Workflow execution completed successfully
 2026-08-14 11:46:34 - __main__ - INFO - Report saved to: /root/autodl-tmp/Finance/Financial-MCP-Agent/reports/report_茅台_600519_20260814_114634.md
+2026-08-14 14:08:48 - __main__ - INFO - Environment Variables Loaded:
+2026-08-14 14:08:48 - __main__ - INFO -   OPENAI_COMPATIBLE_MODEL: qwen3.7-plus
+2026-08-14 14:08:48 - __main__ - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://dashscope.aliyuncs.com/compatible-mode/v1
+2026-08-14 14:08:48 - __main__ - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2026-08-14 14:08:48 - __main__ - INFO - ✓ 执行日志系统已初始化，日志目录: logs/20260814_140848_aa1c9c6a
+2026-08-14 14:08:48 - __main__ - INFO - 从查询中提取 - 公司名称: 腾讯, 股票代码: None
+2026-08-14 14:08:48 - __main__ - INFO - 当前时间: 2026年08月14日 (2026-08-14) 星期五 14:08:48
+2026-08-14 14:08:48 - __main__ - INFO - Starting financial analysis workflow for query: '帮我看看腾讯股票值得投资吗'
+2026-08-14 14:11:29 - __main__ - INFO - Workflow execution completed successfully
+2026-08-14 14:11:29 - __main__ - INFO - Report saved to: /root/autodl-tmp/Finance/Financial-MCP-Agent/reports/report_帮我看看腾讯股票值得投资吗_20260814_141129.md

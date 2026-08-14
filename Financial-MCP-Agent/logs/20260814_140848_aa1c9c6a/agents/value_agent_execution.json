@@ -1,0 +1,32 @@
+{
+  "agent_name": "value_agent",
+  "start_time": "2026-08-14T14:08:48.245666",
+  "start_timestamp": 1786687728.24567,
+  "input_data": {
+    "user_query": "帮我看看腾讯股票值得投资吗",
+    "stock_code": null,
+    "company_name": "腾讯",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2026-08-14T14:09:16.064695",
+  "end_timestamp": 1786687756.064713,
+  "execution_time_seconds": 27.818665504455566,
+  "output_data": {
+    "value_analysis_length": 450,
+    "analysis_preview": "## 重要说明：数据源限制\n\n经过多次尝试，**本系统的数据工具（Baostock）仅支持中国A股（上海证券交易所和深圳证券交易所）的股票数据**。\n\n**腾讯控股（0700.HK）在香港联合交易所上市**，不在A股市场，因此无法通过当前工具获取其数据。\n\n---\n\n### 可行的替代方案：\n\n1. **如果您想分析A股中与腾讯相关的公司**，例如：\n   - 腾讯概念股（如sz.002555 三七互娱等）\n   - 互联网/科技行业A股公司\n\n2. **如果您有具体的A股股票代码**，我可以为您进行完整的估值分析，包括：\n   - 基本面分析（市盈率、市净率、ROE等）\n   - 历史估值趋势\n   - 行业对比\n   - 股息分析\n   - 杜邦分析\n\n---\n\n**请问您是否希望我：**\n- 分析某只A股科技/互联网公司的估值？\n- 或者您有其他A股股票代码需要分析？\n\n请提供正确的A股股票代码（格式如：sh.600000 或 sz.000001），我将立即为您进行全面的估值分析。",
+    "llm_execution_time": 27.08920192718506,
+    "total_execution_time": 27.818665504455566
+  },
+  "success": true,
+  "error": null
+}

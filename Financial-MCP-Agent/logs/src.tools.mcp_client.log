@@ -776,3 +776,9 @@ FileNotFoundError: [Errno 2] No such file or directory: 'uv'
 2026-08-14 11:52:50 - src.tools.mcp_client - INFO - ✓ Returning cached MCP tools.
 2026-08-14 11:52:50 - src.tools.mcp_client - INFO - 🔄 Closing MCP client sessions...
 2026-08-14 11:52:50 - src.tools.mcp_client - INFO - ✓ MCP client sessions (if any were persistently open) assumed closed or managed by library.
+2026-08-14 14:08:48 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 14:08:48 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 14:08:48 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 14:08:48 - src.tools.mcp_client - INFO - ✓ Returning cached MCP tools.
+2026-08-14 14:08:48 - src.tools.mcp_client - INFO - ✓ Returning cached MCP tools.
+2026-08-14 14:08:48 - src.tools.mcp_client - INFO - ✓ Returning cached MCP tools.

@@ -336,3 +336,17 @@ huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name
 **风险等级**：中等（主要源于行业周期下行与宏观消费预期偏弱）
 ...
 2026-08-14 11:46:34 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /root/autodl-tmp/Finance/Financial-MCP-Agent/reports/report_茅台_600519_20260814_114634.md
+2026-08-14 14:10:12 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-08-14 14:10:12 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: api
+2026-08-14 14:10:12 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using OpenAI API...
+2026-08-14 14:10:12 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Creating ChatOpenAI with model qwen3.7-plus
+2026-08-14 14:11:29 - src.agents.summary_agent - INFO - 截断报告在时间信息行之后，截断位置: 3540
+2026-08-14 14:11:29 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 腾讯 (Unknown Stock).
+2026-08-14 14:11:29 - src.agents.summary_agent - DEBUG - Final report preview: # 腾讯控股(00700.HK) 综合分析报告
+
+## 执行摘要
+
+截至2026年08月14日，腾讯控股正处于战略转型的关键阵痛期与价值重估的交汇点。公司最新发布的2026年Q2财报显示，营收首次突破2000亿大关，游戏与广告业务表现强劲；但为全面加速AI战略，单季资本开支飙升至528亿元创历史新高，导致自由现金流首次转负，净利润略低于市场预期。受此影响，股价年内回撤近30%，逼近52周低点。
+
+综合评估认为，腾讯当前以短期利润和现金流置换长期AI入场券的战略方向正确，且当前15.58倍的市盈率已充分计价了短期财务压力，处于历史估值低位，具备较高的安全边际。建议长期投资者逢低分批布局，中短期投...
+2026-08-14 14:11:29 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /root/autodl-tmp/Finance/Financial-MCP-Agent/reports/report_帮我看看腾讯股票值得投资吗_20260814_141129.md
