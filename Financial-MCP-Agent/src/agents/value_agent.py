@@ -97,7 +97,7 @@ async def value_agent(state: AgentState) -> AgentState:
         # 2. 获取MCP工具集
         logger.info(f"{WAIT_ICON} ValueAgent: Fetching MCP tools...")
         try:
-            mcp_tools = await get_mcp_tools()
+            mcp_tools = await get_mcp_tools(agent_name)
             if not mcp_tools:
                 logger.error(
                     f"{ERROR_ICON} ValueAgent: No MCP tools available.")

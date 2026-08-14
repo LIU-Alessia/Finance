@@ -91,7 +91,7 @@ async def technical_agent(state: AgentState) -> AgentState:
         # 2. 获取MCP工具集
         logger.info(f"{WAIT_ICON} TechnicalAgent: Fetching MCP tools...")
         try:
-            mcp_tools = await get_mcp_tools()
+            mcp_tools = await get_mcp_tools(agent_name)
             if not mcp_tools:
                 logger.error(f"{ERROR_ICON} TechnicalAgent: No MCP tools available.")
                 current_data["technical_analysis_error"] = "No MCP tools available."

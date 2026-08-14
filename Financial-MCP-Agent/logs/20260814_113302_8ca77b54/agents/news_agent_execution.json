@@ -1,0 +1,33 @@
+{
+  "agent_name": "news_agent",
+  "start_time": "2026-08-14T11:33:03.108498",
+  "start_timestamp": 1786678383.108504,
+  "input_data": {
+    "user_query": "帮我看看茅台(600519)这只股票值得投资吗",
+    "stock_code": "sh.600519",
+    "company_name": "茅台",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2026-08-14T11:35:05.805780",
+  "end_timestamp": 1786678505.8057978,
+  "execution_time_seconds": 122.69688391685486,
+  "output_data": {
+    "news_analysis_length": 6020,
+    "analysis_preview": "现在我已收集到充分的新闻数据，下面为您提供全面的茅台新闻分析报告。\n\n---\n\n# 🍷 贵州茅台（sh.600519）新闻综合分析报告\n\n**分析日期：2026年8月14日**\n\n---\n\n## 一、核心新闻汇总与逐条分析\n\n### 📰 新闻1：2026年一季报发布——业绩复苏信号明确\n> **来源**：网易财经 / 雪球 | **时间**：2026年4月24日\n>\n> 贵州茅台2026年Q1实现营业总收入547.03亿元，同比增长6.34%；归母净利润272.43亿元，同比增长1.47%。市场化转型战略围绕产品、价格、渠道、运营四大体系完成系统性升级，改革成效初步显现。\n\n| 维度 | 评分 | 说明 |\n|------|------|------|\n| **情感分析** | ⭐⭐⭐⭐ **4分（正面）** | 在2025年业绩首次双降后，Q1实现\"双增\"，释放明确的复苏信号，市场信心得到提振 |\n| **风险评估** | ⭐⭐ **2分（低风险）** | 营收增速6.34%尚可，但净利润仅增1.47%，利润增速远低于营收增速，暗示成本压力或价格竞争加剧 |\n\n**股价潜在影响**：",
+    "llm_execution_time": 121.82640171051025,
+    "total_execution_time": 122.69688391685486
+  },
+  "success": true,
+  "error": null
+}

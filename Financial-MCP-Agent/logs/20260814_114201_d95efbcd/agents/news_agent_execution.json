@@ -1,0 +1,33 @@
+{
+  "agent_name": "news_agent",
+  "start_time": "2026-08-14T11:42:01.462112",
+  "start_timestamp": 1786678921.4621198,
+  "input_data": {
+    "user_query": "帮我看看茅台(600519)这只股票值得投资吗",
+    "stock_code": "sh.600519",
+    "company_name": "茅台",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2026-08-14T11:43:23.943600",
+  "end_timestamp": 1786679003.9436154,
+  "execution_time_seconds": 82.48107552528381,
+  "output_data": {
+    "news_analysis_length": 5063,
+    "analysis_preview": "现在我已获取了丰富的茅台相关新闻数据。下面我将进行全面的新闻分析。\n\n---\n\n# 🍷 贵州茅台（sh.600519）新闻深度分析报告\n\n**分析日期：2026年8月14日**\n\n---\n\n## 一、关键新闻汇总与情感/风险评估\n\n### 📰 新闻1：飞天茅台再次提价，\"随行就市\"机制落地\n> **时间**：2026年7月27日\n> **内容**：贵州茅台自2026年7月18日起，将飞天53%vol 500mL贵州茅台酒（2026）i茅台平台零售价由1539元/瓶调整为1639元/瓶、销售合同价由1269元/瓶调整为1369元/瓶。3个多月来，核心产品销售合同价累计上涨17.1%。\n\n| 维度 | 评分 | 说明 |\n|------|------|------|\n| **情感分析** | ⭐⭐⭐⭐ **4分（正面）** | 提价体现了茅台的定价权和品牌溢价能力，有利于提升营收和利润率 |\n| **风险评估** | ⭐⭐ **2分（低风险）** | 在行业调整期提价存在一定需求压力，但茅台品牌护城河深厚，风险可控 |\n\n**股价影响**：📈 **短期偏正面**。提价直接提升吨酒价格和毛利",
+    "llm_execution_time": 81.54368352890015,
+    "total_execution_time": 82.48107552528381
+  },
+  "success": true,
+  "error": null
+}

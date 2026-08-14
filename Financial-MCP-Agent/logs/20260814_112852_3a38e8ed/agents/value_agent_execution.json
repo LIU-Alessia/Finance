@@ -1,0 +1,43 @@
+{
+  "agent_name": "value_agent",
+  "start_time": "2026-08-14T11:28:52.424478",
+  "start_timestamp": 1786678132.4244823,
+  "input_data": {
+    "user_query": "帮我看看茅台(600519)这只股票值得投资吗",
+    "stock_code": "sh.600519",
+    "company_name": "茅台",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "failed",
+  "end_time": "2026-08-14T11:30:53.715131",
+  "end_timestamp": 1786678253.7151496,
+  "execution_time_seconds": 121.2901132106781,
+  "output_data": {
+    "query": "帮我看看茅台(600519)这只股票值得投资吗",
+    "current_date": "2026-08-14",
+    "current_date_cn": "2026年08月14日",
+    "current_time": "11:28:52",
+    "current_weekday_cn": "星期五",
+    "current_time_info": "2026年08月14日 (2026-08-14) 星期五 11:28:52",
+    "analysis_timestamp": "2026-08-14T11:28:52.314350",
+    "company_name": "茅台",
+    "stock_code": "sh.600519",
+    "technical_analysis_error": "Error in MCP or agent execution: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT",
+    "technical_analysis": "技术分析过程中出现错误: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT",
+    "news_analysis": "基于获取到的新闻数据，我现在为您提供贵州茅台（sh.600519）的全面新闻分析报告：\n\n---\n\n# 贵州茅台（sh.600519）新闻分析报告\n\n**分析日期：2026年8月14日**\n\n---\n\n## 一、关键新闻汇总与情感/风险评估\n\n### 新闻1：茅台2025年业绩说明会召开（2026年5月11日）\n**内容摘要**：贵州茅台举行2025年度及2026年第一季度线上业绩说明会，2025年营业总收入约1721亿元，回应了投资者关注的年度目标、业绩增速等热点问题。\n\n| 评估维度 | 评分 | 说明 |\n|---------|------|------|\n| **情感分析** | 4/5（正面） | 业绩稳健，主动与投资者沟通，展现透明度 |\n| **风险评估** | 2/5（低风险） | 业绩符合预期，但增速可能放缓引发关注 |\n| **股价影响** | 中性偏正面 | 业绩确定性较强，支撑股价底部 |\n\n---\n\n### 新闻2：年末茅台行情向好，白酒行业2026年或迎拐点（2025年12月）\n**内容摘要**：岁末年初白酒消费旺季，茅台多款非标产品价格涨幅较大，蛇茅单日暴涨230元/瓶。业内分析认为白酒行业2026年可能迎来拐点。\n\n| 评估维度 | 评分 | 说明 |\n|---------|------|------|\n| **情感分析** | 5/5（极正面） | 产品价格回升，行业拐点预期强烈 |\n| **风险评估** | 2/5（低风险） | 旺季效应明显，但需关注持续性 |\n| **股价影响** | 正面 | 行业拐点预期将提振板块估值 |\n\n---\n\n### 新闻3：王莉定调茅台新周期——\"随行就市\"价格机制落地（2026年5月）\n**内容摘要**：茅台管理层明确\"随行就市\"价格机制，非标茅台投放以市场为导向，全面推进营销市场化转型。\n\n| 评估维度 | 评分 | 说明 |\n|---------|------|------|\n| **情感分析** | 4/5（正面） | 市场化改革方向正确，增强灵活性 |\n| **风险评估** | 3/5（中等风险） | 价格机制变化可能带来短期波动 |\n| **股价影响** | 中性偏正面 | 长期利好，短期需观察执行效果 |\n\n---\n\n### 新闻4：白酒行业连跌五年，2026年能否困境反转（2026年1月）\n**内容摘要**：2025年白酒行业遭遇近十年最严峻调整，中证白酒指数年内下跌13.71%，18家上市酒企仅3家股价飘红。行业面临营收、利润、回款三重压力。\n\n| 评估维度 | 评分 | 说明 |\n|---------|------|------|\n| **情感分析** | 2/5（轻微负面） | 行业整体低迷，但茅台作为龙头相对抗跌 |\n| **风险评估** | 3/5（中等风险） | 行业周期性调整仍在持续 |\n| **股价影响** | 负面 | 板块整体承压，但龙头有防御价值 |\n\n---\n\n### 新闻5：茅台发布2026年市场化运营方案（2026年1月13日）\n**内容摘要**：贵州茅台董事会审议通过《2026年市场化运营方案》，从产品体系、运营模式、渠道布局、价格机制四方面推进改革，打破固定\"零售价\"\"出厂价\"体系。\n\n| 评估维度 | 评分 | 说明 |\n|---------|------|------|\n| **情感分析** | 4/5（正面） | 改革力度大，展现管理层决心 |\n| **风险评估** | 3/5（中等风险） | 改革阵痛期可能影响短期业绩 |\n| **股价影响** | 中性偏正面 | 长期利好，短期存在不确定性 |\n\n---\n\n### 新闻6：\"禁酒令\"对白酒行业的影响（2025年5月）\n**内容摘要**：修订后的《党政机关厉行节约反对浪费条例》规定\"工作餐不上酒\"，虽公务用酒占比已大幅下降，但仍对市场情绪产生影响，加速非公务场景格局重塑。\n\n| 评估维度 | 评分 | 说明 |\n|---------|------|------|\n| **情感分析** | 2/5（轻微负面） | 政策影响情绪面，但实际冲击有限 |\n| **风险评估** | 2/5（低风险） | 茅台消费群体以商务和私人为主，公务消费占比极低 |\n| **股价影响** | 轻微负面 | 短期情绪冲击，中长期影响有限 |\n\n---\n\n### 新闻7：茅台控量减配额，飞天茅台价格波动（2025年12月）\n**内容摘要**：市场传言茅台将控量减配额，飞天茅台价格先跌破1499元后回升至1560-1610元/瓶，显示公司稳价决心。\n\n| 评估维度 | 评分 | 说明 |\n|---------|------|------|\n| **情感分析** | 3/5（中性） | 价格波动反映市场博弈，控量显示管理层作为 |\n| **风险评估** | 3/5（中等风险） | 价格波动可能影响渠道信心 |\n| **股价影响** | 中性 | 短期波动，长期取决于供需平衡 |\n\n---\n\n### 新闻8：茅台2025年重大调整——飞天、珍品投放量变化（2025年12月）\n**内容摘要**：贵州茅台对多款产品投放量进行调整，包括飞天53度500ml、珍品茅台酒等，以应对市场变化。\n\n| 评估维度 | 评分 | 说明 |\n|---------|------|------|\n| **情感分析** | 3/5（中性） | 主动调整显示管理层应对市场的灵活性 |\n| **风险评估** | 2/5（低风险） | 供给侧调整有助于稳定价格体系 |\n| **股价影响** | 中性偏正面 | 有利于维护品牌价值和市场秩序 |\n\n---\n\n## 二、关键趋势识别\n\n### 1. **行业周期性调整进入尾声**\n- 白酒行业连跌五年，估值跌至历史低位\n- 2026年被业内视为可能的拐点年份\n- 茅台作为龙头具有更强的抗周期能力\n\n### 2. **市场化改革加速推进**\n- \"随行就市\"价格机制落地\n- 打破固定出厂价/零售价体系\n- 渠道布局更加灵活多元\n\n### 3. **产品结构优化**\n- 打造\"金字塔\"型产品体系\n- 非标产品投放以市场为导向\n- 飞天茅台核心地位稳固\n\n### 4. **政策环境变化**\n- \"禁酒令\"影响有限（公务消费占比已极低）\n- 消费场景向商务、私人领域转移\n- 行业加速非公务场景格局重塑\n\n---\n\n## 三、综合评估\n\n### 情感倾向总体评分：**3.5/5（中性偏正面）**\n\n| 维度 | 评分 |\n|------|------|\n| 正面新闻占比 | 约50% |\n| 中性新闻占比 | 约30% |\n| 负面新闻占比 | 约20% |\n\n### 风险水平总体评分：**2.5/5（中低风险）**\n\n| 风险类型 | 等级 |\n|----------|------|\n| 行业周期风险 | 中等 |\n| 政策风险 | 低 |\n| 价格波动风险 | 中等 |\n| 改革执行风险 | 中等 |\n\n---\n\n## 四、股价潜在影响分析\n\n### 短期（1-3个月）\n- **影响因素**：市场化改革执行效果、飞天茅台价格走势\n- **预期方向**：震荡整理，关注1300-1400元支撑位\n- **波动性**：中等\n\n### 中期（3-12个月）\n- **影响因素**：行业拐点确认、2026年半年报/年报业绩\n- **预期方向**：如行业拐点确认，有望迎来估值修复\n- **波动性**：中高\n\n### 长期（1年以上）\n- **影响因素**：品牌价值维护、消费场景拓展、改革成效\n- **预期方向**：作为白酒龙头，长期价值依然稳固\n- **波动性**：中低\n\n---\n\n## 五、投资建议\n\n### 综合评级：**谨慎乐观**\n\n#### 利好因素：\n1. ✅ 行业可能迎来拐点，估值处于历史低位\n2. ✅ 管理层积极推进市场化改革，方向正确\n3. ✅ 品牌价值稳固，龙头地位难以撼动\n4. ✅ 2025年业绩稳健（营收约1721亿元）\n\n#### 风险因素：\n1. ⚠️ 行业周期性调整尚未完全结束\n2. ⚠️ 价格机制改革存在执行风险\n3. ⚠️ 飞天茅台价格波动可能影响渠道信心\n4. ⚠️ 宏观经济不确定性对高端消费的影响\n\n#### 操作建议：\n- **已持有者**：可继续持有，关注行业拐点信号\n- **观望者**：可逢低分批布局，但不宜追高\n- **风险偏好较低者**：建议等待行业拐点更明确的信号\n\n---\n\n**免责声明**：本分析基于公开新闻数据，仅供参考，不构成投资建议。股市有风险，投资需谨慎。",
+    "value_analysis_error": "Error in MCP or agent execution: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT",
+    "value_analysis": "估值分析过程中出现错误: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT"
+  },
+  "success": false,
+  "error": "Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT"
+}

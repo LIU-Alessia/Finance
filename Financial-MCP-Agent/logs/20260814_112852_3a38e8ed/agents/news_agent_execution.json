@@ -1,0 +1,33 @@
+{
+  "agent_name": "news_agent",
+  "start_time": "2026-08-14T11:28:52.423349",
+  "start_timestamp": 1786678132.4233549,
+  "input_data": {
+    "user_query": "帮我看看茅台(600519)这只股票值得投资吗",
+    "stock_code": "sh.600519",
+    "company_name": "茅台",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2026-08-14T11:30:16.232626",
+  "end_timestamp": 1786678216.2326424,
+  "execution_time_seconds": 83.80884790420532,
+  "output_data": {
+    "news_analysis_length": 3594,
+    "analysis_preview": "基于获取到的新闻数据，我现在为您提供贵州茅台（sh.600519）的全面新闻分析报告：\n\n---\n\n# 贵州茅台（sh.600519）新闻分析报告\n\n**分析日期：2026年8月14日**\n\n---\n\n## 一、关键新闻汇总与情感/风险评估\n\n### 新闻1：茅台2025年业绩说明会召开（2026年5月11日）\n**内容摘要**：贵州茅台举行2025年度及2026年第一季度线上业绩说明会，2025年营业总收入约1721亿元，回应了投资者关注的年度目标、业绩增速等热点问题。\n\n| 评估维度 | 评分 | 说明 |\n|---------|------|------|\n| **情感分析** | 4/5（正面） | 业绩稳健，主动与投资者沟通，展现透明度 |\n| **风险评估** | 2/5（低风险） | 业绩符合预期，但增速可能放缓引发关注 |\n| **股价影响** | 中性偏正面 | 业绩确定性较强，支撑股价底部 |\n\n---\n\n### 新闻2：年末茅台行情向好，白酒行业2026年或迎拐点（2025年12月）\n**内容摘要**：岁末年初白酒消费旺季，茅台多款非标产品价格涨幅较大，蛇茅单日暴",
+    "llm_execution_time": 82.52957463264465,
+    "total_execution_time": 83.80884790420532
+  },
+  "success": true,
+  "error": null
+}

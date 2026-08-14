@@ -1,0 +1,33 @@
+{
+  "agent_name": "fundamental_agent",
+  "start_time": "2026-08-14T11:28:52.316901",
+  "start_timestamp": 1786678132.3169057,
+  "input_data": {
+    "user_query": "帮我看看茅台(600519)这只股票值得投资吗",
+    "stock_code": "sh.600519",
+    "company_name": "茅台",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2026-08-14T11:30:54.813511",
+  "end_timestamp": 1786678254.8135283,
+  "execution_time_seconds": 122.4961769580841,
+  "output_data": {
+    "fundamental_analysis_length": 1088,
+    "analysis_preview": "很抱歉，我在尝试获取贵州茅台（sh.600519）的实时财务数据时遇到了技术问题。数据源API出现了\"用户未登录\"和\"数据格式化错误\"等问题，导致无法获取最新的财务报表、盈利指标、成长能力等关键数据。\n\n## 技术问题分析\n\n我尝试了以下数据获取方式，但均未成功：\n- 基本信息查询（公司资料、行业分类）\n- 财务报表数据（利润表、资产负债表、现金流量表）\n- 财务指标数据（盈利能力、成长能力、运营效率、偿债能力）\n- 历史K线数据\n- 分红数据\n- 杜邦分析数据\n\n## 基本面分析框架\n\n虽然无法提供实时数据分析，但我可以为您提供一个完整的基本面分析框架，当数据源恢复后，可以按此框架进行分析：\n\n### 1. 公司基本信息\n- 公司名称、所属行业、上市日期\n- 主营业务构成\n- 行业地位和竞争优势\n\n### 2. 财务报表分析\n**资产负债表（偿债能力）**\n- 资产负债率（<60%为佳）\n- 流动比率（>1.5为佳）\n- 速动比率（>1为佳）\n- 货币资金储备\n\n**利润表（盈利能力）**\n- 营业收入及增长率\n- 净利润及增长率\n- 毛利率（茅台通常在90%以上）\n- 净利率（茅台",
+    "llm_execution_time": 121.15228867530823,
+    "total_execution_time": 122.4961769580841
+  },
+  "success": true,
+  "error": null
+}

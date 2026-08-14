@@ -1,0 +1,33 @@
+{
+  "agent_name": "technical_agent",
+  "start_time": "2026-08-14T11:42:01.462759",
+  "start_timestamp": 1786678921.4627635,
+  "input_data": {
+    "user_query": "帮我看看茅台(600519)这只股票值得投资吗",
+    "stock_code": "sh.600519",
+    "company_name": "茅台",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2026-08-14T11:45:08.289822",
+  "end_timestamp": 1786679108.289837,
+  "execution_time_seconds": 186.8266158103943,
+  "output_data": {
+    "technical_analysis_length": 1020,
+    "analysis_preview": "现在我已经获取了充足的数据。让我基于这些实际数据进行全面的技术分析。\n\n---\n\n# 📊 贵州茅台（sh.600519）技术分析报告\n\n> **分析日期**：2026年8月14日 | **数据范围**：2025年11月14日 — 2026年8月13日 | **价格类型**：前复权\n\n---\n\n## 一、股票基本信息与最新行情\n\n| 指标 | 数值 |\n|------|------|\n| **最新收盘价** | **10,394.10 元**（2026-08-13） |\n| 最新开盘价 | 10,261.50 元 |\n| 最新最高价 | 10,427.10 元 |\n| 最新最低价 | 10,253.80 元 |\n| 当日涨跌幅 | +0.92% |\n| 当日成交量 | 3,235,348 手 |\n| 当日成交额 | 43.76 亿元 |\n| 当日换手率 | 0.26% |\n| 市盈率(TTM) | 20.48 |\n| 市净率(MRQ) | 6.25 |\n\n---\n\n## 二、价格走势阶段划分（近9个月）\n\n根据历史K线数据，茅台近9个月的走势可清晰划分为**六个阶段**：\n\n| 阶段 |",
+    "llm_execution_time": 185.89693188667297,
+    "total_execution_time": 186.8266158103943
+  },
+  "success": true,
+  "error": null
+}

@@ -1,0 +1,33 @@
+{
+  "agent_name": "value_agent",
+  "start_time": "2026-08-14T11:42:01.463349",
+  "start_timestamp": 1786678921.4633532,
+  "input_data": {
+    "user_query": "帮我看看茅台(600519)这只股票值得投资吗",
+    "stock_code": "sh.600519",
+    "company_name": "茅台",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2026-08-14T11:44:00.279547",
+  "end_timestamp": 1786679040.279563,
+  "execution_time_seconds": 118.81584048271179,
+  "output_data": {
+    "value_analysis_length": 3424,
+    "analysis_preview": "# 贵州茅台（sh.600519）估值分析报告\n\n> 数据截至：2026年8月13日\n\n---\n\n## 一、公司基本信息\n\n| 项目 | 数据 |\n|------|------|\n| 最新股价 | **1,355.29元** |\n| 总股本 | 12.52亿股 |\n| 总市值 | **约1.70万亿元** |\n| 所属行业 | C15 酒、饮料和精制茶制造业 |\n| 上市日期 | 2001-08-27 |\n\n---\n\n## 二、当前主要估值指标\n\n| 估值指标 | 当前值 | 历史分位判断 |\n|----------|--------|-------------|\n| **PE (TTM)** | **20.48倍** | 近5年低位区间 |\n| **PB (MRQ)** | **6.25倍** | 中低位 |\n| **PS (TTM)** | **9.66倍** | 中低位 |\n| **PCF (TTM)** | **1,193倍** | — |\n| **股息率（2025分红）** | **3.81%** | 历史高位 |\n\n---\n\n## 三、盈利能力与财务质量\n\n### 核心盈利",
+    "llm_execution_time": 117.90547227859497,
+    "total_execution_time": 118.81584048271179
+  },
+  "success": true,
+  "error": null
+}

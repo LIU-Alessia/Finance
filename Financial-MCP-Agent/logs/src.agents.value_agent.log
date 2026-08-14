@@ -444,3 +444,103 @@ For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/er
 2025-08-19 22:49:32 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
 2025-08-19 22:49:32 - src.agents.value_agent - INFO - Final extracted analysis length: 1796 characters
 2025-08-19 22:49:32 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.
+2026-08-14 11:27:07 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-08-14 11:27:07 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model qwen3.7-plus
+2026-08-14 11:27:07 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-08-14 11:27:07 - src.agents.value_agent - ERROR - ✗ ValueAgent: No MCP tools available.
+2026-08-14 11:28:52 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-08-14 11:28:52 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model qwen3.7-plus
+2026-08-14 11:28:52 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-08-14 11:28:53 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2026-08-14 11:28:53 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2026-08-14 11:28:53 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2026-08-14 11:28:53 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2026年08月14日 (2026-08-14) 星期五 11:28:52
+当前日期：2026-08-14
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2026-08-14 11:28:53 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2026-08-14 11:30:53 - src.agents.value_agent - ERROR - ✗ ValueAgent: Error in MCP or agent execution: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+Traceback (most recent call last):
+  File "/root/autodl-tmp/Finance/Financial-MCP-Agent/src/agents/value_agent.py", line 160, in value_agent
+    response = await agent.ainvoke(input_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3112, in ainvoke
+    async for chunk in self.astream(
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langgraph/pregel/main.py", line 2977, in astream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2026-08-14 11:33:03 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-08-14 11:33:03 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model qwen3.7-plus
+2026-08-14 11:33:03 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-08-14 11:33:04 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2026-08-14 11:33:04 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2026-08-14 11:33:04 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2026-08-14 11:33:04 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2026年08月14日 (2026-08-14) 星期五 11:33:02
+当前日期：2026-08-14
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2026-08-14 11:33:04 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2026-08-14 11:35:07 - src.agents.value_agent - INFO - ReAct agent execution completed in 123.44 seconds
+2026-08-14 11:35:07 - src.agents.value_agent - INFO - Response messages count: 13
+2026-08-14 11:35:07 - src.agents.value_agent - INFO - AI messages count: 3
+2026-08-14 11:35:07 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
+2026-08-14 11:35:07 - src.agents.value_agent - INFO - Final extracted analysis length: 0 characters
+2026-08-14 11:35:07 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.
+2026-08-14 11:42:01 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-08-14 11:42:01 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model qwen3.7-plus
+2026-08-14 11:42:01 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-08-14 11:42:02 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2026-08-14 11:42:02 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2026-08-14 11:42:02 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2026-08-14 11:42:02 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2026年08月14日 (2026-08-14) 星期五 11:42:01
+当前日期：2026-08-14
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2026-08-14 11:42:02 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2026-08-14 11:44:00 - src.agents.value_agent - INFO - ReAct agent execution completed in 117.91 seconds
+2026-08-14 11:44:00 - src.agents.value_agent - INFO - Response messages count: 21
+2026-08-14 11:44:00 - src.agents.value_agent - INFO - AI messages count: 4
+2026-08-14 11:44:00 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
+2026-08-14 11:44:00 - src.agents.value_agent - INFO - Final extracted analysis length: 3424 characters
+2026-08-14 11:44:00 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.

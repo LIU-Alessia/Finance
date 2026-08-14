@@ -1,0 +1,40 @@
+{
+  "agent_name": "technical_agent",
+  "start_time": "2026-08-14T11:28:52.423911",
+  "start_timestamp": 1786678132.4239147,
+  "input_data": {
+    "user_query": "帮我看看茅台(600519)这只股票值得投资吗",
+    "stock_code": "sh.600519",
+    "company_name": "茅台",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "failed",
+  "end_time": "2026-08-14T11:30:13.628109",
+  "end_timestamp": 1786678213.6281192,
+  "execution_time_seconds": 81.20377707481384,
+  "output_data": {
+    "query": "帮我看看茅台(600519)这只股票值得投资吗",
+    "current_date": "2026-08-14",
+    "current_date_cn": "2026年08月14日",
+    "current_time": "11:28:52",
+    "current_weekday_cn": "星期五",
+    "current_time_info": "2026年08月14日 (2026-08-14) 星期五 11:28:52",
+    "analysis_timestamp": "2026-08-14T11:28:52.314350",
+    "company_name": "茅台",
+    "stock_code": "sh.600519",
+    "technical_analysis_error": "Error in MCP or agent execution: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT",
+    "technical_analysis": "技术分析过程中出现错误: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT"
+  },
+  "success": false,
+  "error": "Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT"
+}

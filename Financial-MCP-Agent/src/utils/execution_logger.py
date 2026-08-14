@@ -4,6 +4,7 @@
 """
 import os
 import json
+import hashlib
 import time
 from datetime import datetime
 from typing import Dict, Any, Optional, List
@@ -145,14 +146,19 @@ class ExecutionLogger:
         return interaction_log
 
     def log_tool_usage(self, agent_name: str, tool_name: str, tool_input: Dict,
-                       tool_output: Any, execution_time: float, success: bool = True, error: str = None):
+                       tool_output: Any, execution_time: float, success: bool = True, error: str = None,
+                       cache_hit: bool = False, request_key: str = None):
         """记录工具使用情况"""
+        output_text = str(tool_output)
         tool_log = {
             "timestamp": datetime.now().isoformat(),
             "agent_name": agent_name,
             "tool_name": tool_name,
             "input": tool_input,
-            "output": str(tool_output)[:1000] + "..." if len(str(tool_output)) > 1000 else str(tool_output),
+            "output": output_text[:1000] + "..." if len(output_text) > 1000 else output_text,
+            "output_fingerprint": hashlib.sha256(output_text.encode("utf-8")).hexdigest(),
+            "request_key": request_key,
+            "cache_hit": cache_hit,
             "execution_time_seconds": execution_time,
             "success": success,
             "error": error
@@ -216,6 +222,10 @@ class ExecutionLogger:
             "agents_executed": [],
             "llm_interactions_count": 0,
             "tools_used_count": 0,
+            "tool_success_rate": None,
+            "data_consistency_rate": None,
+            "cache_hit_rate": None,
+            "tool_latency_seconds": {"average": None, "p95": None},
             "total_files_created": 0
         }
 
@@ -240,9 +250,40 @@ class ExecutionLogger:
         # 统计工具使用次数
         tools_dir = self.execution_dir / "tools"
         if tools_dir.exists():
+            tool_logs = []
             for tool_file in tools_dir.glob("*.jsonl"):
                 with open(tool_file, 'r', encoding='utf-8') as f:
-                    summary["tools_used_count"] += len(f.readlines())
+                    for line in f:
+                        if line.strip():
+                            tool_logs.append(json.loads(line))
+
+            summary["tools_used_count"] = len(tool_logs)
+            if tool_logs:
+                success_count = sum(tool_log.get("success", False) for tool_log in tool_logs)
+                cache_hit_count = sum(tool_log.get("cache_hit", False) for tool_log in tool_logs)
+                latencies = sorted(tool_log.get("execution_time_seconds", 0) for tool_log in tool_logs)
+                p95_index = max(0, int(len(latencies) * 0.95) - 1)
+                summary["tool_success_rate"] = success_count / len(tool_logs)
+                summary["cache_hit_rate"] = cache_hit_count / len(tool_logs)
+                summary["tool_latency_seconds"] = {
+                    "average": sum(latencies) / len(latencies),
+                    "p95": latencies[p95_index],
+                }
+
+                outputs_by_request = {}
+                for tool_log in tool_logs:
+                    request_key = tool_log.get("request_key")
+                    if request_key and tool_log.get("success"):
+                        outputs_by_request.setdefault(request_key, []).append(tool_log.get("output_fingerprint"))
+
+                comparison_groups = [fingerprints for fingerprints in outputs_by_request.values() if len(fingerprints) > 1]
+                comparisons = sum(len(fingerprints) - 1 for fingerprints in comparison_groups)
+                if comparisons:
+                    matching = sum(
+                        sum(fingerprint == fingerprints[0] for fingerprint in fingerprints[1:])
+                        for fingerprints in comparison_groups
+                    )
+                    summary["data_consistency_rate"] = matching / comparisons
 
         # 统计创建的文件数量
         summary["total_files_created"] = len(
@@ -270,6 +311,10 @@ class ExecutionLogger:
 - 执行的Agent数量: {len(execution_info.get('summary', {}).get('agents_executed', []))}
 - LLM交互次数: {execution_info.get('summary', {}).get('llm_interactions_count', 0)}
 - 工具使用次数: {execution_info.get('summary', {}).get('tools_used_count', 0)}
+- 工具调用成功率: {self._format_rate(execution_info.get('summary', {}).get('tool_success_rate'))}
+- 数据一致率: {self._format_rate(execution_info.get('summary', {}).get('data_consistency_rate'))}
+- 缓存命中率: {self._format_rate(execution_info.get('summary', {}).get('cache_hit_rate'))}
+- 工具平均/P95时延: {self._format_latency(execution_info.get('summary', {}).get('tool_latency_seconds'))}
 - 创建文件数量: {execution_info.get('summary', {}).get('total_files_created', 0)}
 
 ## Agent执行详情
@@ -285,6 +330,16 @@ class ExecutionLogger:
         summary_text += f"\n## 日志文件位置\n{self.execution_dir}\n"
 
         self._save_text(summary_text, "EXECUTION_SUMMARY.md")
+
+    @staticmethod
+    def _format_rate(rate: Optional[float]) -> str:
+        return "N/A（无有效样本）" if rate is None else f"{rate:.2%}"
+
+    @staticmethod
+    def _format_latency(latency: Optional[Dict[str, float]]) -> str:
+        if not latency or latency.get("average") is None:
+            return "N/A（无有效样本）"
+        return f"{latency['average']:.2f}s / {latency['p95']:.2f}s"
 
     def _save_json(self, data: Dict[str, Any], filename: str):
         """保存JSON数据"""

@@ -1,0 +1,33 @@
+{
+  "agent_name": "fundamental_agent",
+  "start_time": "2026-08-14T11:33:03.001726",
+  "start_timestamp": 1786678383.0017297,
+  "input_data": {
+    "user_query": "帮我看看茅台(600519)这只股票值得投资吗",
+    "stock_code": "sh.600519",
+    "company_name": "茅台",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2026-08-14T11:35:13.795403",
+  "end_timestamp": 1786678513.7954178,
+  "execution_time_seconds": 130.79330325126648,
+  "output_data": {
+    "fundamental_analysis_length": 4363,
+    "analysis_preview": "基于获取的数据，我为您提供贵州茅台（sh.600519）的全面基本面分析报告：\n\n---\n\n# 贵州茅台（sh.600519）基本面分析报告\n\n## 一、公司基本信息\n\n| 项目 | 内容 |\n|------|------|\n| 股票代码 | sh.600519 |\n| 公司名称 | 贵州茅台 |\n| 所属行业 | C15 酒、饮料和精制茶制造业 |\n| 行业分类 | 证监会行业分类 |\n| 总股本 | 12.562亿股 |\n| 流通股 | 12.562亿股（全流通）|\n\n**行业背景**：贵州茅台是中国白酒行业的龙头企业，主营酱香型白酒的生产和销售，产品以\"飞天茅台\"为核心，具有极强的品牌壁垒和定价权。\n\n---\n\n## 二、盈利能力分析\n\n### 2.1 核心盈利指标\n\n| 指标 | 2024年报 | 2025年中报 | 2025年一季报 | 同比变化(2025年报) |\n|------|----------|------------|--------------|-------------------|\n| **ROE（加权平均）** | 38.43% | 19.25% | 10",
+    "llm_execution_time": 129.80981516838074,
+    "total_execution_time": 130.79330325126648
+  },
+  "success": true,
+  "error": null
+}

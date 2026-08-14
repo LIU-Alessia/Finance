@@ -286,3 +286,53 @@ huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name
 2025-08-19 22:49:32 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
 2025-08-19 22:49:32 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /root/code/Finance/FinR1...
 2025-08-19 22:49:40 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2026-08-14 11:27:07 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-08-14 11:27:07 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: api
+2026-08-14 11:27:07 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using OpenAI API...
+2026-08-14 11:27:07 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Creating ChatOpenAI with model qwen3.7-plus
+2026-08-14 11:28:07 - src.agents.summary_agent - INFO - 截断报告在'分析基准时间'行之后，截断位置: 3495
+2026-08-14 11:28:07 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 茅台 (sh.600519).
+2026-08-14 11:28:07 - src.agents.summary_agent - DEBUG - Final report preview: # 贵州茅台(600519) 综合分析报告
+
+## 执行摘要
+贵州茅台（600519.SH）作为中国A股市场的核心资产和高端白酒行业的绝对龙头，具备极强的品牌护城河、卓越的盈利能力和充沛的现金流。尽管当前由于数据获取工具限制，无法提供2026年8月14日的实时盘面与最新财务细节，但基于其长期稳固的商业模式和行业地位，公司长期投资价值依然显著。当前宏观消费环境处于弱复苏阶段，高端白酒需求面临一定考验，估值中枢可能较历史高峰期有所下移。综合评估，建议长期价值投资者将其作为底仓配置，采取逢低分批建仓的策略，以获取长期稳健的复合回报。风险等级：中低（长期）/ 中（短期）。
+
+## 公司概况
+贵州茅台酒...
+2026-08-14 11:28:07 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /root/autodl-tmp/Finance/Financial-MCP-Agent/reports/report_茅台_600519_20260814_112807.md
+2026-08-14 11:30:54 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-08-14 11:30:54 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: api
+2026-08-14 11:30:54 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using OpenAI API...
+2026-08-14 11:30:54 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Creating ChatOpenAI with model qwen3.7-plus
+2026-08-14 11:35:13 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-08-14 11:35:13 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: api
+2026-08-14 11:35:13 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using OpenAI API...
+2026-08-14 11:35:13 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Creating ChatOpenAI with model qwen3.7-plus
+2026-08-14 11:36:39 - src.agents.summary_agent - WARNING - 未找到'分析基准时间'模式，返回原始报告内容
+2026-08-14 11:36:39 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 茅台 (sh.600519).
+2026-08-14 11:36:39 - src.agents.summary_agent - DEBUG - Final report preview: # 贵州茅台(sh.600519) 综合分析报告
+
+## 执行摘要
+
+贵州茅台（sh.600519）正处于企业增长逻辑重构与行业周期筑底的关键交汇期。2025年公司上市24年来首次出现业绩双降，标志着高速扩张时代的结束；但2026年一季度业绩企稳回升、时隔8年重启提价以及深度的营销渠道改革，充分验证了其无可撼动的品牌护城河与定价权。当前公司估值处于历史极低分位，叠加接近4%的股息率，具备显著的“类债券”防御属性与长期配置价值。
+
+**综合评级**：长期买入 / 短期增持
+**风险等级**：中等（主要源于宏观消费环境与政策扰动）
+**预期回报**：稳健的股息收益 + 估值修复带来的温和资本利得（...
+2026-08-14 11:36:39 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /root/autodl-tmp/Finance/Financial-MCP-Agent/reports/report_茅台_600519_20260814_113639.md
+2026-08-14 11:45:08 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-08-14 11:45:08 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: api
+2026-08-14 11:45:08 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using OpenAI API...
+2026-08-14 11:45:08 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Creating ChatOpenAI with model qwen3.7-plus
+2026-08-14 11:46:34 - src.agents.summary_agent - WARNING - 未找到'分析基准时间'模式，返回原始报告内容
+2026-08-14 11:46:34 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 茅台 (sh.600519).
+2026-08-14 11:46:34 - src.agents.summary_agent - DEBUG - Final report preview: # 贵州茅台(sh.600519) 综合分析报告
+
+## 执行摘要
+
+截至2026年8月14日，贵州茅台（sh.600519）正处于从“高成长白马”向“高质量红利价值股”转型的关键阵痛期。公司2025年净利润出现上市以来首次下滑，标志着双位数高增长时代的终结；但凭借91%的毛利率、超34%的ROE以及堡垒级的资产负债表，其核心商业护城河依然坚不可摧。当前股价（约1,355元）对应PE(TTM)约20.5倍，处于近五年历史低位，且股息率已达3.81%，具备显著的防御属性和长期配置价值。
+
+**综合评级**：谨慎乐观 / 逢低布局
+**风险等级**：中等（主要源于行业周期下行与宏观消费预期偏弱）
+...
+2026-08-14 11:46:34 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /root/autodl-tmp/Finance/Financial-MCP-Agent/reports/report_茅台_600519_20260814_114634.md

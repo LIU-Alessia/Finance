@@ -1,0 +1,33 @@
+{
+  "agent_name": "technical_agent",
+  "start_time": "2026-08-14T11:33:03.109105",
+  "start_timestamp": 1786678383.1091092,
+  "input_data": {
+    "user_query": "帮我看看茅台(600519)这只股票值得投资吗",
+    "stock_code": "sh.600519",
+    "company_name": "茅台",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2026-08-14T11:34:26.712280",
+  "end_timestamp": 1786678466.7122958,
+  "execution_time_seconds": 83.60267186164856,
+  "output_data": {
+    "technical_analysis_length": 5172,
+    "analysis_preview": "# 贵州茅台（sh.600519）技术分析报告\n\n## 一、股票基本信息\n\n| 项目 | 内容 |\n|------|------|\n| 股票代码 | sh.600519 |\n| 股票名称 | 贵州茅台 |\n| 上市日期 | 2001-08-27 |\n| 交易状态 | 正常交易中 |\n| 最新收盘价 | **10,394.10元**（2026-08-13） |\n\n---\n\n## 二、价格走势分析\n\n### 1. 整体趋势（2026年2月-8月）\n\n```\n价格走势概览：\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n2月底: 11,000-11,400元  ████████████████████████████████ 高位震荡\n3月:   10,400-11,200元  ████████████████████████         震荡下行\n4月:   10,300-11,000元  ██████████████████               继续下跌\n5月:    9,500-10,300元  ███",
+    "llm_execution_time": 82.75214958190918,
+    "total_execution_time": 83.60267186164856
+  },
+  "success": true,
+  "error": null
+}

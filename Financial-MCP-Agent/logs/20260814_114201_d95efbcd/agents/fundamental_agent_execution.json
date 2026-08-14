@@ -1,0 +1,33 @@
+{
+  "agent_name": "fundamental_agent",
+  "start_time": "2026-08-14T11:42:01.354311",
+  "start_timestamp": 1786678921.354315,
+  "input_data": {
+    "user_query": "帮我看看茅台(600519)这只股票值得投资吗",
+    "stock_code": "sh.600519",
+    "company_name": "茅台",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2026-08-14T11:44:04.624121",
+  "end_timestamp": 1786679044.6241379,
+  "execution_time_seconds": 123.26943325996399,
+  "output_data": {
+    "fundamental_analysis_length": 5743,
+    "analysis_preview": "现在我已经获取了充足的数据，下面为您提供贵州茅台（sh.600519）的全面基本面分析报告。\n\n---\n\n# 📊 贵州茅台（sh.600519）基本面深度分析报告\n\n> 数据截止日期：2025年年报（2026年4月17日发布）| 分析日期：2026年8月14日\n\n---\n\n## 一、公司基本信息与行业背景\n\n| 项目 | 内容 |\n|------|------|\n| **股票代码** | sh.600519 |\n| **公司名称** | 贵州茅台 |\n| **上市日期** | 2001年8月27日 |\n| **所属行业** | C15 酒、饮料和精制茶制造业（证监会行业分类） |\n| **交易状态** | 正常交易中 |\n| **总股本** | 12.52亿股 |\n| **流通股** | 12.52亿股（全流通） |\n\n贵州茅台是中国白酒行业的绝对龙头，主营酱香型白酒的生产和销售，核心产品\"飞天茅台\"在中国高端白酒市场占据统治地位，具有极强的品牌壁垒和定价权。\n\n---\n\n## 二、核心财务数据总览（近三年对比）\n\n### 2.1 利润表核心指标\n\n| 指标 | 2023年 | 202",
+    "llm_execution_time": 122.21786522865295,
+    "total_execution_time": 123.26943325996399
+  },
+  "success": true,
+  "error": null
+}

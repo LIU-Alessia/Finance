@@ -498,3 +498,281 @@ UnboundLocalError: local variable 'tools' referenced before assignment
 2025-08-19 22:47:59 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
 2025-08-19 22:47:59 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
 2025-08-19 22:47:59 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:27:07 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': 'uv', 'args': ['run', '--directory', '/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need', 'python', 'mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:27:07 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:27:07 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': 'uv', 'args': ['run', '--directory', '/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need', 'python', 'mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:27:07 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:27:07 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': 'uv', 'args': ['run', '--directory', '/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need', 'python', 'mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:27:07 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:27:07 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': 'uv', 'args': ['run', '--directory', '/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need', 'python', 'mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:27:07 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:27:07 - src.tools.mcp_client - ERROR - ✗ Failed to initialize MCP client or load tools: [Errno 2] No such file or directory: 'uv'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/Finance/Financial-MCP-Agent/src/tools/mcp_client.py", line 55, in get_mcp_tools
+    loaded_tools = await _mcp_client_instance.get_tools()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/client.py", line 142, in get_tools
+    tools_list = await asyncio.gather(*load_mcp_tool_tasks)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/tools.py", line 168, in load_mcp_tools
+    async with create_session(connection) as tool_session:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/sessions.py", line 394, in create_session
+    async with _create_stdio_session(**params) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/sessions.py", line 221, in _create_stdio_session
+    stdio_client(server_params) as (read, write),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/mcp/client/stdio/__init__.py", line 124, in stdio_client
+    process = await _create_platform_compatible_process(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/mcp/client/stdio/__init__.py", line 251, in _create_platform_compatible_process
+    process = await anyio.open_process(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/anyio/_core/_subprocesses.py", line 184, in open_process
+    return await get_async_backend().open_process(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2745, in open_process
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/base_events.py", line 1756, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/unix_events.py", line 211, in _make_subprocess_transport
+    transp = _UnixSubprocessTransport(self, protocol, args, shell,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/base_subprocess.py", line 36, in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/unix_events.py", line 820, in _start
+    self._proc = subprocess.Popen(
+                 ^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/root/miniconda3/envs/finance/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'uv'
+2026-08-14 11:27:07 - src.tools.mcp_client - ERROR - ✗ Failed to initialize MCP client or load tools: [Errno 2] No such file or directory: 'uv'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/Finance/Financial-MCP-Agent/src/tools/mcp_client.py", line 55, in get_mcp_tools
+    loaded_tools = await _mcp_client_instance.get_tools()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/client.py", line 142, in get_tools
+    tools_list = await asyncio.gather(*load_mcp_tool_tasks)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/tools.py", line 168, in load_mcp_tools
+    async with create_session(connection) as tool_session:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/sessions.py", line 394, in create_session
+    async with _create_stdio_session(**params) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/sessions.py", line 221, in _create_stdio_session
+    stdio_client(server_params) as (read, write),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/mcp/client/stdio/__init__.py", line 124, in stdio_client
+    process = await _create_platform_compatible_process(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/mcp/client/stdio/__init__.py", line 251, in _create_platform_compatible_process
+    process = await anyio.open_process(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/anyio/_core/_subprocesses.py", line 184, in open_process
+    return await get_async_backend().open_process(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2745, in open_process
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/base_events.py", line 1756, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/unix_events.py", line 211, in _make_subprocess_transport
+    transp = _UnixSubprocessTransport(self, protocol, args, shell,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/base_subprocess.py", line 36, in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/unix_events.py", line 820, in _start
+    self._proc = subprocess.Popen(
+                 ^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/root/miniconda3/envs/finance/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'uv'
+2026-08-14 11:27:07 - src.tools.mcp_client - ERROR - ✗ Failed to initialize MCP client or load tools: [Errno 2] No such file or directory: 'uv'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/Finance/Financial-MCP-Agent/src/tools/mcp_client.py", line 55, in get_mcp_tools
+    loaded_tools = await _mcp_client_instance.get_tools()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/client.py", line 142, in get_tools
+    tools_list = await asyncio.gather(*load_mcp_tool_tasks)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/tools.py", line 168, in load_mcp_tools
+    async with create_session(connection) as tool_session:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/sessions.py", line 394, in create_session
+    async with _create_stdio_session(**params) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/sessions.py", line 221, in _create_stdio_session
+    stdio_client(server_params) as (read, write),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/mcp/client/stdio/__init__.py", line 124, in stdio_client
+    process = await _create_platform_compatible_process(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/mcp/client/stdio/__init__.py", line 251, in _create_platform_compatible_process
+    process = await anyio.open_process(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/anyio/_core/_subprocesses.py", line 184, in open_process
+    return await get_async_backend().open_process(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2745, in open_process
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/base_events.py", line 1756, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/unix_events.py", line 211, in _make_subprocess_transport
+    transp = _UnixSubprocessTransport(self, protocol, args, shell,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/base_subprocess.py", line 36, in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/unix_events.py", line 820, in _start
+    self._proc = subprocess.Popen(
+                 ^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/root/miniconda3/envs/finance/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'uv'
+2026-08-14 11:27:07 - src.tools.mcp_client - ERROR - ✗ Failed to initialize MCP client or load tools: [Errno 2] No such file or directory: 'uv'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/Finance/Financial-MCP-Agent/src/tools/mcp_client.py", line 55, in get_mcp_tools
+    loaded_tools = await _mcp_client_instance.get_tools()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/client.py", line 142, in get_tools
+    tools_list = await asyncio.gather(*load_mcp_tool_tasks)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/tools.py", line 168, in load_mcp_tools
+    async with create_session(connection) as tool_session:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/sessions.py", line 394, in create_session
+    async with _create_stdio_session(**params) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/langchain_mcp_adapters/sessions.py", line 221, in _create_stdio_session
+    stdio_client(server_params) as (read, write),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/mcp/client/stdio/__init__.py", line 124, in stdio_client
+    process = await _create_platform_compatible_process(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/mcp/client/stdio/__init__.py", line 251, in _create_platform_compatible_process
+    process = await anyio.open_process(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/anyio/_core/_subprocesses.py", line 184, in open_process
+    return await get_async_backend().open_process(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2745, in open_process
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/base_events.py", line 1756, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/unix_events.py", line 211, in _make_subprocess_transport
+    transp = _UnixSubprocessTransport(self, protocol, args, shell,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/base_subprocess.py", line 36, in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+  File "/root/miniconda3/envs/finance/lib/python3.12/asyncio/unix_events.py", line 820, in _start
+    self._proc = subprocess.Popen(
+                 ^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/finance/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/root/miniconda3/envs/finance/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'uv'
+2026-08-14 11:28:52 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:28:52 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:28:52 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:28:52 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:28:52 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:28:52 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:28:52 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:28:52 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:28:53 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:28:53 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:28:53 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:28:53 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:32:19 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:32:19 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:32:20 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:32:20 - src.tools.mcp_client - INFO - 🔄 Closing MCP client sessions...
+2026-08-14 11:32:20 - src.tools.mcp_client - INFO - ✓ MCP client sessions (if any were persistently open) assumed closed or managed by library.
+2026-08-14 11:33:03 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:33:03 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:33:03 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:33:03 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:33:03 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:33:03 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:33:03 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:33:03 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:33:03 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:33:03 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:33:03 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:33:04 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:42:01 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:42:01 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:42:01 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:42:01 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:42:01 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:42:01 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:42:01 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:42:01 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:42:02 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:42:02 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:42:02 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:42:02 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:50:59 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:50:59 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:51:00 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:51:00 - src.tools.mcp_client - INFO - 🔄 Closing MCP client sessions...
+2026-08-14 11:51:00 - src.tools.mcp_client - INFO - ✓ MCP client sessions (if any were persistently open) assumed closed or managed by library.
+2026-08-14 11:52:49 - src.tools.mcp_client - INFO - 🔄 Initializing MultiServerMCPClient with config: {'a_share_mcp_v2': {'command': '/root/miniconda3/envs/finance/bin/python', 'args': ['/root/autodl-tmp/Finance/a-share-mcp-is-just-i-need/mcp_server.py'], 'transport': 'stdio'}}
+2026-08-14 11:52:49 - src.tools.mcp_client - INFO - 🔄 Fetching tools from MCP server 'a_share_mcp_v2'...
+2026-08-14 11:52:50 - src.tools.mcp_client - INFO - ✓ Successfully loaded 27 tools from 'a_share_mcp_v2'.
+2026-08-14 11:52:50 - src.tools.mcp_client - INFO - ✓ Returning cached MCP tools.
+2026-08-14 11:52:50 - src.tools.mcp_client - INFO - ✓ Returning cached MCP tools.
+2026-08-14 11:52:50 - src.tools.mcp_client - INFO - ✓ Returning cached MCP tools.
+2026-08-14 11:52:50 - src.tools.mcp_client - INFO - 🔄 Closing MCP client sessions...
+2026-08-14 11:52:50 - src.tools.mcp_client - INFO - ✓ MCP client sessions (if any were persistently open) assumed closed or managed by library.

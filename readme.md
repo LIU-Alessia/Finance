@@ -26,6 +26,7 @@ USE_LOCAL_MODEL=api
 
 3. 配置MCP服务器路径
 修改Financial-MCP-Agent/src/tools/mcp_config.py
+```python
 SERVER_CONFIGS = {
     "a_share_mcp_v2": {  
         "command": "uv", 
@@ -39,6 +40,7 @@ SERVER_CONFIGS = {
         "transport": "stdio",
     }
 }
+```
 
 4. lora微调得到风险分析模型和情感分析模型
 在本步骤中，需要使用大语言模型（默认Qwen3-8B）和指定的数据集来训练两个模型：

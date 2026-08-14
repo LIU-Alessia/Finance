@@ -21,6 +21,9 @@ start_node → [fundamental_analyst, technical_analyst, value_analyst] → summa
 import os
 import sys
 
+# 添加项目根目录到Python路径，确保模块导入正常工作
+sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
+
 # 设置环境变量来抑制transformers和其他库的冗余输出
 os.environ["TRANSFORMERS_VERBOSITY"] = "error"  # 只显示错误信息
 os.environ["TOKENIZERS_PARALLELISM"] = "false"  # 禁用tokenizer并行化警告
@@ -64,9 +67,6 @@ from datetime import datetime
 
 # 设置日志记录器
 logger = setup_logger(__name__)
-
-# 添加项目根目录到Python路径，确保模块导入正常工作
-sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 
 # 加载环境变量（从.env文件）
 load_dotenv(override=True)
